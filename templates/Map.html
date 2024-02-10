@@ -12,7 +12,7 @@
     crossorigin=""
   />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -20,6 +20,7 @@
     crossorigin=""
   ></script>
   <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
   
 </head>
 <body>
@@ -29,5 +30,18 @@
   
 
   <script src="../static/map.js"></script>
+  <script>
+    L.Control.geocoder().addTo(map);
+
+// Function to handle search result
+function onGeocodeResult(result) {
+  map.fitBounds(result.bbox);
+}
+
+map.on('geocodereverse', function(event) {
+  var latlng = event.latlng;
+  console.log("You clicked the map at latitude: " + latlng.lat + " and longitude: " + latlng.lng);
+});
+  </script>
 </body>
 </html>

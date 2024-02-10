@@ -63,7 +63,33 @@ var baseMaps = {
 var overlayMaps = {
     "Marker": singleMarker
 }
-L.control.layers(baseMaps,overlayMaps).addTo(map);
+L.control.layers(baseMaps,overlayMaps).addTo(map); 
+L.control.geocoder().addTo(map);
+function onGeocodeResult(result) {
+    map.fitBounds(result.bbox);
+  }
+
+  map.on('geocodereverse', function(event) {
+    var latlng = event.latlng;
+    console.log("You clicked the map at latitude: " + latlng.lat + " and longitude: " + latlng.lng);
+  });
+
+
+
+
+
+
+
+// var urlParams = new URLSearchParams(window.location.search);
+// var lat = parseFloat(urlParams.get('lat')) || 0;
+// var lon = parseFloat(urlParams.get('lon')) || 0;
+
+// var map = L.map('map').setView([lat, lon], 13); // Set initial map view to the coordinates from the search
+
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     maxZoom: 19,
+//     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+// }).addTo(map);
 
     // marker = L.marker([28.644800,  77.216721]).addTo(map)
     //marker = L.marker(navigator.geolocation.getCurrentPosition(getPosition)).addTo(map)

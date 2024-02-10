@@ -27,6 +27,12 @@ def map():
     Route for displaying the map page.
     """
     return render_template("Map.html")
+@app.route('/search')
+def search():
+    """
+    Route for displaying the search page.
+    """
+    return render_template("Search.html")
 @app.route("/members")
 def member():
     #return {"members": ["member1","member2","member3"]}

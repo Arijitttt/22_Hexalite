@@ -34,12 +34,12 @@ var myIcon = L.icon({
 });
 var restaurants = [
     //coochbihar
-    { name: "Hotel Bangabhumi", location: [26.50282,89.52851], rating: 4, cuisine: "Italian", image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-1.png" },
-    { name: "Maa Greenary View", location: [26.540657144689416, 89.56577869558636], rating: 4.5, cuisine: "Mexican", image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-2.png" },
-    { name: "Resort Jayanti Hills Jungle Camp", location: [26.55072229287304, 89.5301477416167], rating: 4, cuisine: "Italian", image: "../static/assets/pizza.jpeg" },
-    { name: "Oyo 29784 Hotel Debdutta", location: [26.32444045298772, 89.44731381092255], rating: 4, cuisine: "Italian", image: "../static/assets/pizza.jpeg" },
-    { name: "Hotel Dooars Mountain", location: [26.488464775837272, 89.52678569161463 ], rating: 4, cuisine: "Italian", image: "../static/assets/pizza.jpeg" },
-    { name: "Hotel Maa River View", location: [26.540540339555026, 89.56598992257132 ], rating: 4, cuisine: "Italian", image: "../static/assets/pizza.jpeg" },
+    { name: "Hotel Bangabhumi", location: [26.50282,89.52851], rating: 3.5/5,  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-1.png" },
+    { name: "Maa Greenary View", location: [26.540657144689416, 89.56577869558636], rating: 3.5/5,  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-2.png" },
+    { name: "Resort Jayanti Hills Jungle Camp", location: [26.55072229287304, 89.5301477416167], rating: 3/5, image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-3.png" },
+    { name: "Oyo 29784 Hotel Debdutta", location: [26.32444045298772, 89.44731381092255], rating: 4,  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-4.png" },
+    { name: "Hotel Dooars Mountain", location: [26.488464775837272, 89.52678569161463 ], rating: 3,  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-5.png" },
+    { name: "Hotel Maa River View", location: [26.540540339555026, 89.56598992257132 ], rating: 3, image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-6.png" },
     // Add more restaurant data here
 ];
 restaurants.forEach(function(restaurant) {

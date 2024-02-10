@@ -33,7 +33,7 @@ var myIcon = L.icon({
     
 });
 var restaurants = [
-    { name: "Restaurant 1", location: [28.5, 85], rating: 4, cuisine: "Italian", image: "../static/assets/pizza.jpeg" },
+    { name: "Hotel Bangabhumi", location: [28.5, 85], rating: 4, cuisine: "Italian", image: "../static/assets/pizza.jpeg" },
     { name: "Restaurant 2", location: [30.5, 86], rating: 4.5, cuisine: "Mexican", image: "../static/assets/pizza.jpeg" },
     // Add more restaurant data here
 ];

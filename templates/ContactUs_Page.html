@@ -7,14 +7,30 @@
     <link rel="stylesheet" href="../static/contact.css">
 </head>
 <body>
+        
+        <div class="nav-links">
+            <a href="/">Home</a> <br>
+            <a href="/map">About</a><br>
+            <a href="/about">Contact</a><br>
+        </div>
+
     <div class="contact">
-        <p>Contact Us Page</p>
-        <a href="/">Redirecting to Home Page></a> <br>
-        <a href="/map">Redirecting to Map></a><br>
-        <a href="/about">Redirecting to About Us></a><br>
+        <p>Get in Touch</p>
     </div>
-    
-    
+    <div class="flex-container">
+        <div class="form-and-img">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            <img src="../static/assets/contactpage.png" alt="Contact Page Image">
+        </div>
+    </div>
     
 </body>
 </html>

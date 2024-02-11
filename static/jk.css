@@ -1,106 +1,138 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin-inline: auto;
+}
+body {
+  background-color: #0a050a;
+  z-index: 1;
 }
 
-
-.header img{
-width: 70px;
-height: 70px;
-Top:-513px;
-margin-left: 25px;
+.header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+}
+.header {
+  padding-inline: 3rem;
 }
 
-ul{
-    list-style-type: none;
-    float: right;
+ul {
+  list-style-type: none;
+  width: fit-content;
+  align-self: center;
+  background-color: none;
 }
 
-
-
-ul li a{
-    color: #05ad5f;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: 0.2s ease-out;
-    font-weight: 500;
-    display: block;
-    font-size: 20px;
+ul li a {
+  color: whitesmoke;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  font-weight: 500;
+  display: block;
+  font-size: 18px;
 }
 
-li{
-    display: inline-block;
-    padding-top: 5px;
+li {
+  display: inline-block;
+  padding-top: 5px;
 }
 
-li a:hover{
-background-color: black;
-color: white;
+li a:hover {
+  color: #7bfd93;
 }
 
-.vertical .item{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-    background-image: url("images/bg1.png");
-    background-position: center;
-    background-size: 70%;
-    }
-    
-    .vertical .item h1{
-        margin-top: 10%;
-        font-size: 50px;
-        
-    }
-    
-    .item .horizontal{
-        display: flex;
-        justify-content: space-evenly;
-    align-items: center;
-    padding-top: 3%;
-    background-color: black;
-    width: 100%;
-    margin-top: 10%;
-    }
-    
-    .horizontal .place{
-        width: 300px;
-        height: 350px;
-        border: 2px solid black;
-        margin: 50px;
-        border-radius: 10px;
-        margin-bottom: 80px;
-        background-color: grey;
-    }
-    
-    .place img{
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-left: 70px;
-        margin-top: 15px;
-    }
-    
-    .place p{
-        font-size: 30px;
-        text-align: center;
-       margin-top: 40px;
-    }
-    
-    .place button{
-        background-color: green;
-        color: white;
-        font-size: 30px;
-        width: 150px;
-        border: 2px solid black;
-        border-radius: 5px;
-        margin-top: 55px;
-        margin-left: 70px;
-    }
-    
+.landing-section {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-inline: 10rem;
+}
+.landing-img img {
+  width: 450px;
+  height: auto;
+}
+.title h1 {
+  color: #feefce;
+  font-size: 40px;
+}
+
+.places-section .horizontal {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 3%;
+  width: 100%;
+}
+
+.horizontal .place {
+  width: 270px;
+  height: 350px;
+  border: 3px solid #05ad5f;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem;
+  cursor: pointer;
+}
+.img-div {
+  width: 150px;
+  height: 150px;
+}
+.img-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.place p {
+  font-size: 18px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.place button {
+  background-color: #05ad5f;
+  color: white;
+  font-size: 16px;
+  width: fit-content;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.place button:hover {
+  box-shadow: 0px 0px 10px 0px #05ad5f;
+}
+.place:hover {
+  transform: scale(1.1);
+}
+.circle1 {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -1;
+  background-color: #05ad5f;
+  right: -170px;
+  top: -300px;
+  filter: blur(17px);
+}
+.circle2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -1;
+  background-color: #7bfd93;
+  right: -325px;
+  top: 115px;
+  filter: blur(17px);
+}

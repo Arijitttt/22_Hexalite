@@ -3,16 +3,21 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  max-width: 1280px;
   margin-inline: auto;
+}
+body {
   background-color: #0a050a;
+  z-index: 1;
 }
 
+.header {
+  padding-inline: 3rem;
+}
 .header img {
   width: 70px;
   height: 70px;
-  top: -513px;
-  margin-left: 25px;
+  border-radius: 50%;
+  position: absolute;
 }
 
 ul {
@@ -20,16 +25,17 @@ ul {
   display: flex;
   width: fit-content;
   align-self: center;
+  background-color: none;
 }
 
 ul li a {
-  color: #05ad5f;
+  color: whitesmoke;
   padding: 10px 20px;
   text-decoration: none;
   transition: 0.2s ease-out;
   font-weight: 500;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 li {
@@ -38,79 +44,105 @@ li {
 }
 
 li a:hover {
-  background-color: black;
-  color: white;
+  color: #7bfd93;
 }
 
 h2 {
-  margin-top: 300px;
   text-align: center;
   font-size: 40px;
+  color: #feefce;
 }
 
 .container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 50px;
+  margin: 5rem;
 }
 .states {
-  width: 300px;
+  width: 270px;
   height: 350px;
-  border: 2px solid black;
-  margin: 10px;
-  border-radius: 10px;
-  margin-bottom: 80px;
+  border: 3px solid #05ad5f;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem;
+  cursor: pointer;
 }
 
-.states img {
+.img-div {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  margin-left: 70px;
-  margin-top: 15px;
 }
-
+.img-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .states p {
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
-  margin-top: 40px;
+  color: whitesmoke;
 }
 
 .states button {
-  background-color: red;
+  background-color: #05ad5f;
   color: white;
-  font-size: 30px;
-  width: 150px;
-  border: 2px solid black;
-  border-radius: 5px;
-  margin-top: 55px;
-  margin-left: 70px;
+  font-size: 16px;
+  width: fit-content;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.states button:hover {
+  box-shadow: 0px 0px 10px 0px #05ad5f;
 }
 
 .states:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .middle {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-}
-
-.item {
-  width: 150px;
-  height: 150px;
+  padding-inline: 5rem;
+  margin: 5rem;
 }
 
 .item p {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
-  margin-top: 130px;
   color: #feefce;
 }
 
-.item img {
-  width: 450px;
-  height: 350px;
+.landing-img {
+  width: 550px;
+  height: auto;
+}
+
+.circle1 {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -1;
+  background-color: #05ad5f;
+  right: -170px;
+  top: -300px;
+  filter: blur(17px);
+}
+.circle2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -1;
+  background-color: #7bfd93;
+  right: -325px;
+  top: 115px;
+  filter: blur(17px);
 }

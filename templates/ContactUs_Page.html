@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HackFest</title>
-    <link rel="stylesheet" href="../static/contact.css">
-</head>
-<body>
-        
-        <div class="nav-links">
-            <a href="/">Home</a> <br>
-            <a href="/map">About</a><br>
-            <a href="/about">Contact</a><br>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../static/contact.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <img src="/static/assets/hackfest hackathon/images/logo.png" />
+      <ul>
+        <li><a href="Home_Page.html">Home</a></li>
+        <li><a href="AboutUs_Page.html">About</a></li>
+        <li>
+          <a style="color: #7bfd93" href="ContactUs_Page.html">Contact</a>
+        </li>
+      </ul>
+    </div>
 
     <div class="contact">
-        <p>Get in Touch</p>
+      <p>Get in Touch</p>
     </div>
     <div class="flex-container">
-        <div class="form-and-img">
-            <form>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-            <img src="../static/assets/contactpage.png" alt="Contact Page Image">
-        </div>
+      <div class="form-and-img">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="contactForm"
+          onsubmit="submitForm(event)"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="f01fd2a3-ff61-4ec7-a90b-9872d1c73357"
+          />
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="4"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <img src="../static/assets/contactpage.png" alt="Contact Page Image" />
+      </div>
     </div>
-    
-</body>
+
+    <script>
+      function submitForm(event) {
+        // Clear form input values
+        document.getElementById("contactForm").reset();
+      }
+    </script>
+  </body>
 </html>

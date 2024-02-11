@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="/static/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-<div class="header">
-    <img src="/static/assets/hackfest hackathon/images/logo.png">
-    <ul>
-        <li><a href="Home_Page.html">Home</a></li>  
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-    </ul>
-</div>
-<div class="middle">
-<div class="item">
-    <p>Discover<br>Your<br>Adventure</p>
-</div>
-<div class="item">
-    <img src="images/image1.png">
-</div>
-</div>
-
-<h2>Choose Your Destination</h2>
-
-<div class="container">
-    <div class="states">
-        <img src="images/wb.jpg">
-        <p>West Bengal</p>
-        <button onclick="window.location.href='WB.html'">SPOT IT</button>
+    <link rel="stylesheet" href="/static/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <img src="/static/assets/hackfest hackathon/images/logo.png" />
+      <ul>
+        <li><a style="color: #7bfd93" href="Home_Page.html">Home</a></li>
+        <li><a href="AboutUs_Page.html">About</a></li>
+        <li><a href="ContactUs_Page.html">Contact</a></li>
+      </ul>
     </div>
-    <div class="states">
-        <img src="images/kerala.jpg">
-        <p>Kerala</p>
-        <button onclick="window.location.href='Kerala.html'">SPOT IT</button>
+    <div class="middle">
+      <div class="item">
+        <p>Discover<br />Your<br />Adventure</p>
+      </div>
+      <div class="item">
+        <img
+          class="landing-img"
+          src="/static/assets/hackfest hackathon/images/for-index.png"
+        />
+      </div>
     </div>
-    <div class="states">
-        <img src="images/kashmir.jpg">
-        <p>Jammu & Kashmir</p>
-        <button onclick="window.location.href='JK.html'">SPOT IT</button>
+
+    <div class="states-section">
+      <h2>Choose Your Destination</h2>
+
+      <div class="container">
+        <div class="states">
+          <div class="img-div">
+            <img
+              src="/static/assets/hackfest hackathon/west bengal/for-index.jpg"
+            />
+          </div>
+
+          <p>West Bengal</p>
+          <button onclick="window.location.href='WB.html'">Check</button>
+        </div>
+        <div class="states">
+          <div class="img-div">
+            <img src="/static/assets/hackfest hackathon/kerala/for-index.jpg" />
+          </div>
+
+          <p>Kerala</p>
+          <button onclick="window.location.href='Kerala.html'">Check</button>
+        </div>
+        <div class="states">
+          <div class="img-div">
+            <img
+              src="/static/assets/hackfest hackathon/jammu n kashmir/for-index.jpg"
+            />
+          </div>
+          <p>Jammu & Kashmir</p>
+          <button onclick="window.location.href='JK.html'">Check</button>
+        </div>
+      </div>
     </div>
-</div>
-
-
-</body>
+  </body>
 </html>

@@ -1,104 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin-inline: auto;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:black;
+  background-color: #0a050a;
+  z-index: 1;
+}
+
+.header {
+  padding-inline: 3rem;
+}
+.header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  width: fit-content;
+  align-self: center;
+  background-color: none;
+}
+
+ul li a {
+  color: whitesmoke;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  font-weight: 500;
+  display: block;
+  font-size: 18px;
+}
+
+li {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+li a:hover {
+  color: #7bfd93;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .contact {
-    color: #fff;
-    padding: 10px;
-    justify-items: center;
-    /* display: inline-block; */
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    font-weight: 700;
-    font-size: 30px;
+  color: #feefce;
+  padding: 10px;
+  justify-items: center;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .nav-links {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    font-size:25px;
-
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 25px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-    color: white;
-    /* display: inline-block; */
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  color: white;
+  /* display: inline-block; */
 }
 
 .form-and-img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 
 form {
-    width: 20%;
-    left: 80px;
-    color: white;
-    height: 105%;
-    background-color: #05AD5F;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    position: relative; /* Add this line to make positioning relative */
+  width: 20%;
+  left: 80px;
+  color: white;
+  height: 400px;
+  background-color: #05ad5f;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #fff;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
 }
 form input,
 form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Add this line to make the input edges round */
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-form input[type="submit"] {
-    background-color: #05AD5F; /* Light green color */
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    width: 60px;
-    border-radius: 10px; /* Increased border-radius for rounded edges */
-    padding: 10px 15px; /* Adjusted padding for a slightly larger button */
-    position: absolute;
-    right: 40px;
-    bottom: -10px; /* Adjusted the bottom value to make it slightly down */
+form button {
+  width: fit-content;
+  color: black;
+  cursor: pointer;
+  border: none;
+  width: 60px;
+  border-radius: 10px;
+  position: absolute;
+  padding: 0.3rem;
+  right: 46px;
+  bottom: 41px;
 }
 
-form input[type="submit"]:hover {
-    background-color: #05986E; /* Darker shade on hover for contrast */
+form button:hover {
+  background-color: #05986e;
 }
 
-form input[type="submit"]:hover {
-    background-color: #2980b9;
+form button:hover {
+  background-color: #2980b9;
 }
 
 img {
-    width: 50%;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.circle1 {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -1;
+  background-color: #05ad5f;
+  right: -170px;
+  top: -300px;
+  filter: blur(17px);
+}
+.circle2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -1;
+  background-color: #7bfd93;
+  right: -325px;
+  top: 115px;
+  filter: blur(17px);
 }

@@ -14,6 +14,24 @@ def home():
     Route for the home page, renders the Home_Page.html template.
     """
     return render_template("Home_Page.html")
+@app.route('/coochbihar-map')
+def mapcoochbihar():
+    """
+    Route for the home page, renders the Home_Page.html template.
+    """
+    return render_template("m-coochbihar.html")
+@app.route('/west-bengal')
+def west():
+
+    return render_template("WB.html")
+@app.route('/Kerala')
+def kerala():
+
+    return render_template("Kerala.html")
+@app.route('/Jharkhand')
+def jk():
+   
+    return render_template("JK.html")
 @app.route('/about')
 def about():
     """

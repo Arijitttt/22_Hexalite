@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WestBengal</title>
     <link rel="stylesheet" href="/static/westbengal.css" />
+    <script src="../static/coochbihar.js"></script>
+    <script src="../static/map.js"></script>
   </head>
   <body>
     <div class="header">
@@ -12,9 +14,9 @@
       <div class="circle2"></div>
       <img src="/static/assets/hackfest hackathon/images/logo.png" />
       <ul>
-        <li><a href="/templates/Home_Page.html">Home</a></li>
-        <li><a href="AboutUs_Page.html">About</a></li>
-        <li><a href="ContactUs_Page.html">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
     <div class="landing-section">
@@ -41,7 +43,10 @@
             />
           </div>
           <p>Coochbihar</p>
-          <button>Spot It</button>
+          <a href="/map">
+            <button id="coochbihar">Spot It</button>
+          </a>
+          
         </div>
 
         <div class="place">
@@ -51,7 +56,9 @@
             />
           </div>
           <p>Murshidabad</p>
-          <button>Spot It</button>
+          <a href="/map">
+            <button>Spot It</button>
+          </a>
         </div>
 
         <div class="place">
@@ -61,7 +68,9 @@
             />
           </div>
           <p>Birbhum</p>
-          <button>Spot It</button>
+          <a href="/map">
+            <button>Spot It</button>
+          </a>
         </div>
       </div>
     </div>

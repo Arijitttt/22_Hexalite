@@ -1,4 +1,23 @@
-var map = L.map('map').setView([24.71133333333, 88.5229], 9);
+var map = L.map('map-coochbihar').setView([30,30], 8);
+
+
+// // Function to handle button click event
+// function onChangeMapView() {
+//     // Here you can implement your logic to get the coordinates dynamically
+//     // For this example, let's set it to a static coordinate
+//     var newMapView = [30, 80]; // Example: New coordinates to set the map view
+
+//     // Update the map view to the new coordinates
+//     map.setView(newMapView, map.getZoom());
+
+//     // Redirect to /map
+//     window.location.href = '/map';
+// }
+
+// // Add event listener to the button
+// changeMapViewBtn.addEventListener('click', onChangeMapView);
+
+
 
 
 
@@ -65,19 +84,6 @@ var restaurants = [
     { name: "Oasis Inn", bookingLink:"https://www.makemytrip.com/hotels/hotel-details/?hotelId=202207301200351770&_uCurrency=INR&checkin=03072024&checkout=03082024&city=CTBPW&cmp=SEO&country=IN&lat=24.10248&lng=88.25631&locusId=CTMSH&locusType=city&modifyDates=true&rank=17&roomStayQualifier=2e0e&searchText=Murshidabad&seoDS=true&seoReq=1707610517907&mtkeys=defaultMtkey", location: [24.102639873675095, 88.2563240243449], rating: "4.5/5",price:"2,204/night", image: "../static/assets/hackfest hackathon/hotels/murshidabad/Hotel-11.png" },
     { name: "Hotel Sonali Bangla", bookingLink:"https://www.makemytrip.com/hotels/hotel-details/?hotelId=201501151402094296&_uCurrency=INR&checkin=03072024&checkout=03082024&city=CTBPW&cmp=SEO&country=IN&lat=24.09892&lng=88.25764&locusId=CTMSH&locusType=city&modifyDates=true&rank=19&roomStayQualifier=2e0e&searchText=Murshidabad&seoDS=true&seoReq=1707610517907&mtkeys=defaultMtkey", location: [24.098952296971987, 88.25752233783729 ], rating: "3.7/5",price:"2,015/night", image: "../static/assets/hackfest hackathon/hotels/murshidabad/Hotel-12.png" },
     { name: "Golden Retreats", bookingLink:"https://www.makemytrip.com/hotels/hotel-details/?hotelId=202203180438063995&_uCurrency=INR&checkin=03072024&checkout=03082024&city=CTBPW&cmp=SEO&country=IN&lat=24.09237&lng=88.26409&locusId=CTMSH&locusType=city&modifyDates=true&rank=30&roomStayQualifier=2e0e&searchText=Murshidabad&seoDS=true&seoReq=1707610517907&mtkeys=8381073284617038320", location: [24.092467217010633, 88.26409936852377 ], rating: "4.4/5",price:"3,2049/night", image: "../static/assets/hackfest hackathon/hotels/murshidabad/Hotel-13.png" },
-
-
-    //Birbhum
-    { name: "Hotel Royal Bengal", bookingLink:"https://www.tripadvisor.in/Hotel_Review-g735771-d1640858-Reviews-Hotel_Royal_Bengal-Santiniketan_Birbhum_District_West_Bengal.html", location: [23.66864951961871, 87.68951086720836 ], price:"1,926/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-1.png" },
-    { name: "Rangamati Garden Resort", bookingLink:"https://www.tripadvisor.in/Hotel_Review-g735771-d4951977-Reviews-Rangamati_Garden_Resort-Santiniketan_Birbhum_District_West_Bengal.html", location: [23.699012712844848, 87.6950854247963 ], price:"2,675/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-2.jpg" },
-    { name: "Panthashala Shantiniketan", bookingLink:"https://www.tripadvisor.in/Hotel_Review-g13322714-d11619625-Reviews-Panthashala_Shantiniketan-Daronda_Birbhum_District_West_Bengal.html", location: [23.639629650220744, 87.6155269254072], price:"1,605/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-4.jpg" },
-    { name: "Dip Holidays", bookingLink:"https://www.tripadvisor.in/Hotel_Review-g735771-d23061239-Reviews-Dip_Holidays-Santiniketan_Birbhum_District_West_Bengal.html", location: [23.695469420628747, 87.68733611656688], price:"1,200/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-3.jpg" },
-    { name: "Hotel Basundhara", bookingLink:"https://www.tripadvisor.in/Hotel_Review-g735771-d1972428-Reviews-Hotel_Basundhara-Santiniketan_Birbhum_District_West_Bengal.html", location: [23.670539782865507, 87.67720390331868], price:"1,161/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-5.jpg" },
-    { name: "Hotel Rangamati", bookingLink:"https://www.tripadvisor.in/Hotel_Review-g1436005-d2507874-Reviews-Hotel_Rangamati-Bolpur_Birbhum_District_West_Bengal.html", location: [23.669435848451833, 87.68947473706453], price:"1,881/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-6.jpg" },
-    { name: "Kristi Guest House", bookingLink:"https://www.tripadvisor.in/Hotel_Review-g1436005-d17733107-Reviews-Kristi_Guest_House-Bolpur_Birbhum_District_West_Bengal.html", location: [23.68853219277258, 87.68240002602029], price:"2,991/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-7.jpg" },
-    { name: "Ram Shyam Village Resort", bookingLink:"https://www.tripadvisor.in/Hotel_Review-g26616117-d10495198-Reviews-Ram_Shyam_Village_Resort-Kabi_Mohanpur_Birbhum_District_West_Bengal.html", location: [23.692189136607464, 87.66982021988602], price:"1,553/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-8.jpg" },
-    { name: "Annupama Inn", bookingLink:"https://www.makemytrip.com/hotels/annupama_inn-details-tarapith.html", location: [24.11428089505599, 87.8005224137605], price:"1,190/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-9.png" },
-    { name: "Hotel Yashoda International", bookingLink:"https://www.tripadvisor.in/Hotel_Review-g1651181-d1892898-Reviews-Hotel_Yashoda_International-Tarapith_Birbhum_District_West_Bengal.html?spAttributionToken=ODQzOTc5NA", location: [24.121395646435673, 87.79520771376068], price:"929/night", image: "../static/assets/hackfest hackathon/hotels/birbhum/hotel-10.jpg" },
     // Add more restaurant data here
     // Add more restaurant data here
 ];

@@ -34,12 +34,12 @@ var myIcon = L.icon({
 });
 var restaurants = [
     //coochbihar
-    { name: "Hotel Bangabhumi", location: [26.50282,89.52851], rating: 3.5/5,  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-1.png" },
-    { name: "Maa Greenary View", location: [26.540657144689416, 89.56577869558636], rating: 3.5/5,  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-2.png" },
-    { name: "Resort Jayanti Hills Jungle Camp", location: [26.55072229287304, 89.5301477416167], rating: 3/5, image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-3.png" },
-    { name: "Oyo 29784 Hotel Debdutta", location: [26.32444045298772, 89.44731381092255], rating: 4,  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-4.png" },
-    { name: "Hotel Dooars Mountain", location: [26.488464775837272, 89.52678569161463 ], rating: 3,  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-5.png" },
-    { name: "Hotel Maa River View", location: [26.540540339555026, 89.56598992257132 ], rating: 3, image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-6.png" },
+    { name: "Hotel Bangabhumi", bookingLink:"https://www.expedia.co.in/Alipurduar-Hotels-Hotel-Bangabhumi.h33312596.Hotel-Information?chkin=2024-03-12&chkout=2024-03-13&x_pwa=1&rfrr=HSR&pwa_ts=1707629521757&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jby5pbi9Ib3RlbC1TZWFyY2g%3D&useRewards=false&rm1=a2&regionId=3000441189&destination=Cooch+Behar%2C+West+Bengal%2C+India&destType=MARKET&selected=33312596&latLong=26.32173%2C89.45134&sort=RECOMMENDED&top_dp=9401&top_cur=INR&userIntent=&selectedRoomType=216930142&selectedRatePlan=382417722&searchId=71f43160-6487-45a7-be5d-48c0bf861ee6", location: [26.50282,89.52851], rating: "3.5/5", price:"9,401/night",  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-1.png" },
+    { name: "Maa Greenary View",bookingLink:"https://www.expedia.co.in/Alipurduar-Hotels-Maa-Greenery-View.h37039287.Hotel-Information?chkin=2024-03-12&chkout=2024-03-13&x_pwa=1&rfrr=HSR&pwa_ts=1707629525767&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jby5pbi9Ib3RlbC1TZWFyY2g%3D&useRewards=false&rm1=a2&regionId=3000441189&destination=Cooch+Behar%2C+West+Bengal%2C+India&destType=MARKET&selected=33312596&latLong=26.32173%2C89.45134&sort=RECOMMENDED&top_dp=2444&top_cur=INR&userIntent=&selectedRoomType=215142954&selectedRatePlan=382369846&searchId=71f43160-6487-45a7-be5d-48c0bf861ee6", location: [26.540657144689416, 89.56577869558636], rating: "3.5/5",price:"2,444/night",  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-2.png" },
+    { name: "Resort Jayanti Hills Jungle Camp", bookingLink:"https://www.expedia.co.in/Alipurduar-Hotels-Resort-Jayanti-Hills-Jungle-Camp.h29766992.Hotel-Information?chkin=2024-03-12&chkout=2024-03-13&x_pwa=1&rfrr=HSR&pwa_ts=1707629525772&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jby5pbi9Ib3RlbC1TZWFyY2g%3D&useRewards=false&rm1=a2&regionId=3000441189&destination=Cooch+Behar%2C+West+Bengal%2C+India&destType=MARKET&selected=33312596&latLong=26.32173%2C89.45134&sort=RECOMMENDED&userIntent=&searchId=71f43160-6487-45a7-be5d-48c0bf861ee6", location: [26.55072229287304, 89.5301477416167], rating: "3/5",price:"1889/night", image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-3.png" },
+    { name: "Oyo 29784 Hotel Debdutta", bookingLink:"https://www.expedia.co.in/Cooch-Behar-Hotels-OYO-27984-Hotel-Debdutta.h40151496.Hotel-Information?chkin=2024-03-12&chkout=2024-03-13&x_pwa=1&rfrr=HSR&pwa_ts=1707629525767&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jby5pbi9Ib3RlbC1TZWFyY2g%3D&useRewards=false&rm1=a2&regionId=3000441189&destination=Cooch+Behar%2C+West+Bengal%2C+India&destType=MARKET&selected=33312596&latLong=26.32173%2C89.45134&sort=RECOMMENDED&userIntent=&searchId=71f43160-6487-45a7-be5d-48c0bf861ee6", location: [26.32444045298772, 89.44731381092255], rating: "4/5",price:"1200/night",  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-4.png" },
+    { name: "Hotel Dooars Mountain", bookingLink:"https://www.expedia.co.in/Alipurduar-Hotels-Hotel-Dooars-Mountain.h23050819.Hotel-Information?chkin=2024-03-12&chkout=2024-03-13&x_pwa=1&rfrr=HSR&pwa_ts=1707629525774&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jby5pbi9Ib3RlbC1TZWFyY2g%3D&useRewards=false&rm1=a2&regionId=3000441189&destination=Cooch+Behar%2C+West+Bengal%2C+India&destType=MARKET&selected=33312596&latLong=26.32173%2C89.45134&sort=RECOMMENDED&userIntent=&searchId=71f43160-6487-45a7-be5d-48c0bf861ee6", location: [26.488464775837272, 89.52678569161463 ], rating: "3/5",price:"1200/night",  image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-5.png" },
+    { name: "Hotel Maa River View", bookingLink:"https://www.expedia.co.in/Alipurduar-Hotels-Maa-River-View.h97338152.Hotel-Information?chkin=2024-03-12&chkout=2024-03-13&x_pwa=1&rfrr=HSR&pwa_ts=1707629525768&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jby5pbi9Ib3RlbC1TZWFyY2g%3D&useRewards=false&rm1=a2&regionId=3000441189&destination=Cooch+Behar%2C+West+Bengal%2C+India&destType=MARKET&selected=33312596&latLong=26.32173%2C89.45134&sort=RECOMMENDED&top_dp=1795&top_cur=INR&userIntent=&selectedRoomType=323665682&selectedRatePlan=392495313&searchId=71f43160-6487-45a7-be5d-48c0bf861ee6", location: [26.540540339555026, 89.56598992257132 ], rating: "3/5",price:"1,795/night", image: "../static/assets/hackfest hackathon/hotels/coochbihar/hotel-6.png" },
     // Add more restaurant data here
 ];
 restaurants.forEach(function(restaurant) {
@@ -47,15 +47,27 @@ restaurants.forEach(function(restaurant) {
     <div className="popup-wrapper">
         <b>${restaurant.name}</b><br>
         Rating: ${restaurant.rating}<br>
-        Cuisine: ${restaurant.cuisine}<br>
-        <img src="${restaurant.image}" class="popup-image" style="width: 180px; height: 140px;">
+        Price: ${restaurant.price}<br>
+        <img src="${restaurant.image}" class="popup-image" style="width: 180px; height: 140px;"><br> 
+        <a href="${restaurant.bookingLink}" class="booking-link">
+            <button class="booking-button " 
+            style="background-color: #05ad5f; padding:10px; font-size: 9px;;
+            cursor: pointer;
+            border-radius: 5px;
+            width:70px;"
+            >Book Now</button></a>
+        </a>
         </div>
     `;
     L.marker(restaurant.location).addTo(map)
         .bindPopup(popupContent)
         
 });
-
+function book(restaurantName) {
+    // Implement your booking logic here
+    alert("Booking for", + restaurantName);
+    // Redirect to booking page, or perform any other action
+}
 
 // Layers
 var baseMaps = {
